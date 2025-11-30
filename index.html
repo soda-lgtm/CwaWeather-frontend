@@ -403,6 +403,7 @@ body {
     
 
             if (!weather) return `<img src="./icon-sunny.png" ${imgClass}>`; 
+            if (weather.includes("多雲時陰短暫雨")) return `<img src="./icon-cloudy_rain.png" ${imgClass}>`;
             if (weather.includes("晴")) return `<img src="./icon-sunny.png" ${imgClass}>`;
             if (weather.includes("多雲")) return `<img src="./icon-cloudy-sun.png" ${imgClass}>`;
             if (weather.includes("陰")) return `<img src="./icon-cloudy.png" ${imgClass}>`;
